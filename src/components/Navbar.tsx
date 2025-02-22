@@ -11,7 +11,7 @@ export default function Navbar() {
         </a>
         <ul className="flex justify-evenly gap-8">
           {navbarItems.map((item) => (
-            <li>
+            <li className="hover:text-green-800 hover:underline">
               <a href="#">
                 <p className="text-slate-700 text-base">{item}</p>
               </a>
@@ -19,12 +19,12 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="flex gap-4">
-          <Button className="bg-green-700 hover:bg-green-800 text-white">
+          <Button className="bg-green-700 hover:bg-green-800 rounded-none text-white">
             Login
           </Button>
           <Button
             variant={"outline"}
-            className="border-green-700 text-green-700 hover:text-green-700"
+            className="border-green-700 rounded-none text-green-700 hover:text-green-700"
           >
             Register
           </Button>
