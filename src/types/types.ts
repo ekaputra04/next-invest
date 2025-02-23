@@ -11,3 +11,11 @@ export type InvestmentItemType = {
   minInvestment: number;
   href: string;
 };
+
+export type FooterItemType = {
+  title: string;
+  details: {
+    name: string;
+    link: string;
+  }[];
+};

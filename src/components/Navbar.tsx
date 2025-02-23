@@ -7,7 +7,7 @@ export default function Navbar() {
     <>
       <div className="flex justify-between items-center px-8 md:px-16 lg:px-48 py-6">
         <a href="#">
-          <p className="font-bold text-green-800 text-xl">NEXT INVEST</p>
+          <p className="font-bold text-green-700 text-xl">NEXT INVEST</p>
         </a>
         <ul className="flex justify-evenly gap-8">
           {navbarItems.map((item) => (

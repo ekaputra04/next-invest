@@ -1,4 +1,5 @@
 import Apply from "./components/Apply";
+import Footer from "./components/Footer";
 import Graph from "./components/Graph";
 import Hero from "./components/Hero";
 import Investment from "./components/Investment";
@@ -12,6 +13,7 @@ export default function App() {
       <Investment />
       <Graph />
       <Apply />
+      <Footer />
     </>
   );
 }
