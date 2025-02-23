@@ -1,4 +1,92 @@
+import { InvestmentItemType } from "@/types/types";
 import InvestmentCard from "./InvestmentCard";
+
+const investmentItems: InvestmentItemType[] = [
+  {
+    image: "/images/oxalis-1.png",
+    title: "Oxalis",
+    location: "Brooklyn, NY",
+    description:
+      "A recognized leader in language immersion & early education, opening second school.",
+    badges: ["House", "Family Business"],
+    raised: 574.92,
+    securityType: "Revenue Sharing Note",
+    investmentMultiple: 1.4,
+    maturity: 48,
+    minInvestment: 100,
+    href: "",
+  },
+  {
+    image: "/images/oxalis-2.png",
+    title: "Oxalis",
+    location: "Brooklyn, NY",
+    description:
+      "A recognized leader in language immersion & early education, opening second school.",
+    badges: ["House", "Family Business"],
+    raised: 574.92,
+    securityType: "Revenue Sharing Note",
+    investmentMultiple: 1.4,
+    maturity: 48,
+    minInvestment: 100,
+    href: "",
+  },
+  {
+    image: "/images/oxalis-3.png",
+    title: "Oxalis",
+    location: "Brooklyn, NY",
+    description:
+      "A recognized leader in language immersion & early education, opening second school.",
+    badges: ["House", "Family Business"],
+    raised: 574.92,
+    securityType: "Revenue Sharing Note",
+    investmentMultiple: 1.4,
+    maturity: 48,
+    minInvestment: 100,
+    href: "",
+  },
+  {
+    image: "/images/oxalis-4.png",
+    title: "Oxalis",
+    location: "Brooklyn, NY",
+    description:
+      "A recognized leader in language immersion & early education, opening second school.",
+    badges: ["House", "Family Business"],
+    raised: 574.92,
+    securityType: "Revenue Sharing Note",
+    investmentMultiple: 1.4,
+    maturity: 48,
+    minInvestment: 100,
+    href: "",
+  },
+  {
+    image: "/images/oxalis-5.png",
+    title: "Oxalis",
+    location: "Brooklyn, NY",
+    description:
+      "A recognized leader in language immersion & early education, opening second school.",
+    badges: ["House", "Family Business"],
+    raised: 574.92,
+    securityType: "Revenue Sharing Note",
+    investmentMultiple: 1.4,
+    maturity: 48,
+    minInvestment: 100,
+    href: "",
+  },
+  {
+    image: "/images/oxalis-1.png",
+    title: "Oxalis",
+    location: "Brooklyn, NY",
+    description:
+      "A recognized leader in language immersion & early education, opening second school.",
+    badges: ["House", "Family Business"],
+    raised: 574.92,
+    securityType: "Revenue Sharing Note",
+    investmentMultiple: 1.4,
+    maturity: 48,
+    minInvestment: 100,
+    href: "",
+  },
+];
 
 export default function Investment() {
   return (
@@ -12,9 +100,9 @@ export default function Investment() {
           number of industry categories.
         </p>
         <div className="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16">
-          <InvestmentCard />
-          <InvestmentCard />
-          <InvestmentCard />
+          {investmentItems.map((item, index) => (
+            <InvestmentCard key={index} item={item} />
+          ))}
         </div>
       </div>
     </>
