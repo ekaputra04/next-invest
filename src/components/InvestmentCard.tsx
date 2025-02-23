@@ -9,7 +9,7 @@ interface InvestmentCardProps {
 export default function InvestmentCard({ item }: InvestmentCardProps) {
   return (
     <>
-      <div className="group bg-white shadow-xl w-full transition-all">
+      <div className="group z-10 bg-white shadow-xl w-full transition-all">
         <div className="group-hover:hidden transition-all duration-200">
           <div className="relative">
             <img

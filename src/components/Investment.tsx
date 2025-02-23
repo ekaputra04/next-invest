@@ -1,5 +1,6 @@
 import { InvestmentItemType } from "@/types/types";
 import InvestmentCard from "./InvestmentCard";
+import { Button } from "./ui/button";
 
 const investmentItems: InvestmentItemType[] = [
   {
@@ -91,7 +92,7 @@ const investmentItems: InvestmentItemType[] = [
 export default function Investment() {
   return (
     <>
-      <div className="bg-slate-50 px-8 md:px-16 lg:px-48 py-16">
+      <div className="relative flex flex-col items-center bg-slate-50 px-8 md:px-16 lg:px-48 py-24">
         <h2 className="font-bold text-slate-600 text-2xl md:text-3xl lg:text-4xl text-center">
           Offerings open for investment
         </h2>
@@ -104,6 +105,27 @@ export default function Investment() {
             <InvestmentCard key={index} item={item} />
           ))}
         </div>
+        <Button
+          className="mx-auto mt-16 border-green-700 rounded-none text-green-700 hover:text-green-700 uppercase"
+          variant={"outline"}
+        >
+          View All Projects
+        </Button>
+        <img
+          src="/images/shape-1.png"
+          alt="decorator"
+          className="top-32 left-16 absolute w-64"
+        />
+        <img
+          src="/images/shape-1.png"
+          alt="decorator"
+          className="top-96 right-16 absolute w-64"
+        />
+        <img
+          src="/images/shape-1.png"
+          alt="decorator"
+          className="bottom-32 left-32 absolute w-64 rotate-30"
+        />
       </div>
     </>
   );
