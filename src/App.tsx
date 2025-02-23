@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Investment from "./components/Investment";
 import Navbar from "./components/Navbar";
 
 export default function App() {
@@ -6,6 +7,7 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
+      <Investment />
     </>
   );
 }

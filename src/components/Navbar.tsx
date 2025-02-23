@@ -5,7 +5,7 @@ const navbarItems = ["Investment Opportunities", "How it Works", "About Us"];
 export default function Navbar() {
   return (
     <>
-      <div className="flex justify-between items-center px-8 md:px-16 lg:px-32 py-6">
+      <div className="flex justify-between items-center px-8 md:px-16 lg:px-48 py-6">
         <a href="#">
           <p className="font-bold text-green-800 text-xl">NEXT INVEST</p>
         </a>
