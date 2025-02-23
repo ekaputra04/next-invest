@@ -50,7 +50,7 @@ const footerItems: FooterItemType[] = [
 export default function Footer() {
   return (
     <div className="space-y-8 bg-slate-200 px-8 md:px-16 lg:px-48 py-24">
-      <div className="gap-8 grid lg:grid-cols-5">
+      <div className="gap-8 grid grid-cols-1 lg:grid-cols-5">
         <div className="space-y-4 lg:col-span-2">
           <h2 className="font-bold text-green-700 text-xl uppercase">
             Next Invest
@@ -63,32 +63,34 @@ export default function Footer() {
             . All rights reserved.
           </p>
         </div>
-        {footerItems.map((item, index) => (
-          <div key={index} className="space-y-4">
-            <h3 className="font-semibold text-green-700 text-lg">
-              {item.title}
-            </h3>
-            <ul className="space-y-2">
-              {item.details.map((detail, index) => (
-                <li key={index}>
-                  <a
-                    href={detail.link}
-                    className="text-slate-500 hover:underline"
-                  >
-                    {detail.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <div className="flex gap-16">
+          {footerItems.map((item, index) => (
+            <div key={index} className="space-y-4">
+              <h3 className="font-semibold text-green-700 text-lg">
+                {item.title}
+              </h3>
+              <ul className="space-y-2">
+                {item.details.map((detail, index) => (
+                  <li key={index}>
+                    <a
+                      href={detail.link}
+                      className="text-slate-500 hover:underline"
+                    >
+                      {detail.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
         <a className="flex justify-end" href="#">
           <Button className="items-center bg-green-700 hover:bg-green-800 rounded-full w-10 h-10">
             ^
           </Button>
         </a>
       </div>
-      <div className="flex justify-between items-end">
+      <div className="flex md:flex-row flex-col justify-between items-start md:items-end gap-8">
         <div className="flex flex-col gap-4">
           <h3 className="font-semibold text-green-700 text-lg">
             Subscribe to our newsletter
@@ -97,7 +99,7 @@ export default function Footer() {
             <input
               type="email"
               placeholder="Email address..."
-              className="flex justify-start items-center bg-slate-100 px-4 rounded-l w-64 h-10 text-sm"
+              className="flex justify-start items-center bg-slate-100 px-4 rounded-l w-40 h-10 text-sm"
             />
             <Button className="bg-green-700 hover:bg-green-800 rounded-l-none h-10 text-white">
               Subscribe

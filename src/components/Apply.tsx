@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 export default function Apply() {
   return (
     <>
-      <div className="relative flex md:flex-row flex-col justify-center items-center gap-32 px-8 md:px-16 lg:px-48 py-24">
+      <div className="relative flex md:flex-row flex-col-reverse justify-center items-center gap-32 px-8 md:px-16 lg:px-48 py-24">
         <div className="space-y-8 md:w-1/2">
           <h2 className="font-semibold text-slate-800 text-2xl md:text-3xl lg:text-4xl">
             Looking to raise capital for your growing business?

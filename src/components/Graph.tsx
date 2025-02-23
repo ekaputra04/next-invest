@@ -1,7 +1,7 @@
 export default function Graph() {
   return (
     <>
-      <div className="relative flex justify-center items-center gap-8 bg-[#ECF4FD] px-8 md:px-16 lg:px-48 py-24">
+      <div className="relative flex md:flex-row flex-col justify-center items-center gap-8 bg-[#ECF4FD] px-8 md:px-16 lg:px-48 py-24">
         <div className="z-10 space-y-8 md:w-1/2">
           <img src="/images/subtract.png" alt="icon" className="w-12" />
           <h2 className="font-semibold text-slate-800 text-2xl md:text-3xl lg:text-4xl text-wrap">
@@ -23,7 +23,7 @@ export default function Graph() {
         <img
           src="/images/vector.png"
           alt="vector"
-          className="bottom-0 left-0 absolute h-96"
+          className="hidden md:block bottom-0 left-0 absolute h-96"
         />
         <img
           src="/images/half-circle.png"

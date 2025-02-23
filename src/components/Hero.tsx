@@ -23,7 +23,7 @@ export default function Hero() {
         <img
           src="/images/circle-blue.png"
           alt="circle"
-          className="top-32 left-32 -z-10 absolute w-64"
+          className="lg:top-32 right-8 bottom-64 lg:left-32 -z-10 absolute w-64"
         />
       </div>
     </>
