@@ -1,3 +1,4 @@
+import Apply from "./components/Apply";
 import Graph from "./components/Graph";
 import Hero from "./components/Hero";
 import Investment from "./components/Investment";
@@ -10,6 +11,7 @@ export default function App() {
       <Hero />
       <Investment />
       <Graph />
+      <Apply />
     </>
   );
 }

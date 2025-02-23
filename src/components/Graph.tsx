@@ -4,7 +4,7 @@ export default function Graph() {
       <div className="relative flex justify-center items-center gap-8 bg-[#ECF4FD] px-8 md:px-16 lg:px-48 py-24">
         <div className="z-10 space-y-8 md:w-1/2">
           <img src="/images/subtract.png" alt="icon" className="w-12" />
-          <h2 className="text-slate-800 text-2xl md:text-3xl lg:text-4xl text-wrap">
+          <h2 className="font-semibold text-slate-800 text-2xl md:text-3xl lg:text-4xl text-wrap">
             $7M+ paid out to investors
           </h2>
           <p className="text-slate-500 text-base">
